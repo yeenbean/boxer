@@ -7,8 +7,9 @@ Instantly launch any operating system or Docker image from your terminal. No ins
 * Launches an interactive Docker container running the specified OS or image
 * Automatically removes the container after use
 * Includes a bind mount to your current working directory in `/host`
+* Optionally run a specific command or shell in the container
 * No additional software required
-* Probably works with `podman` using an alias (untested)
+* Likely works with `podman` using an alias (untested)
 
 ⚠️ *`boxer` always pulls the latest version of an image. At this time, you cannot specify a tag for an image.* ⚠️
 
