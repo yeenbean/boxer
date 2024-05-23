@@ -18,18 +18,24 @@ Add the following code to your `.bashrc` or `.zshrc` file, then restart your ter
 
 ```bash
 boxer() {
-  docker run -it --rm --mount type=bind,source="$(pwd)",target=/host --hostname boxer-"$1" "$1":latest
+  docker run -it --rm --mount type=bind,source="$(pwd)",target=/host --hostname boxer-"$1" "$1":latest "${@:2}"
 }
 ```
 
-## Usage
+## Usage and Examples
 
 ```
-boxer <image_name>
+boxer <image_name> [command]
 ```
 
-For example, to run an instance of Ubuntu:
+### Whip up an Ubuntu container:
 
 ```
 boxer ubuntu
+```
+
+### Drop into a shell within the node image:
+
+```
+boxer node bash
 ```
