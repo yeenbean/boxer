@@ -2,6 +2,8 @@
 
 Instantly launch any operating system or Docker image from your terminal. No installation required - just add a single function to your `.bashrc` or `.zshrc` file.
 
+![](./assets/demo.gif)
+
 ## Key Features
 
 * Launches an interactive Docker container running the specified OS or image
