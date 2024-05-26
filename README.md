@@ -14,8 +14,6 @@ Instantly launch any operating system or Docker image from your terminal. No ins
 * No additional software required
 * Likely works with `podman` using an alias (untested)
 
-⚠️ *`boxer` always pulls the latest version of an image. At this time, you cannot specify a tag for an image.* ⚠️
-
 ## Setup
 
 Add the following code to your `.bashrc` or `.zshrc` file, then restart your terminal:
