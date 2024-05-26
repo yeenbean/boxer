@@ -38,20 +38,8 @@ boxer() {
 boxer <image_name>[:image_tag] [command]
 ```
 
-### Whip up an Ubuntu container:
+### Examples
 
-```
-boxer ubuntu
-```
-
-### Drop into a shell within the node image:
-
-```
-boxer node bash
-```
-
-### Target a specific image tag
-
-```
-boxer rockylinux:9
-```
+- Whip up an Ubuntu container: `boxer ubuntu`
+- Drop into a shell within the node image: `boxer node bash`
+- Target a specific image tag: `boxer rockylinux:9`
