@@ -1,8 +1,30 @@
 # 🥊 Boxer
 
-Instantly launch any operating system or Docker image from your terminal. No installation required - just add a single function to your `.bashrc` or `.zshrc` file.
+Instantly launch an ephemeral Docker container from your terminal with just one function in your `.bashrc` or `.zshrc` file.
 
 ![](./assets/demo.gif)
+
+## Why?
+
+I was inspired by [Distrobox](https://github.com/89luca89/distrobox?tab=readme-ov-file) and wanted to create a solution that works on macOS. Boxer creates **ephemeral** Linux environments for testing or other purpose, and is designed for developers, pentesters, and hobbyists alike.
+
+**Boxer is not meant to replace Distrobox.** Instead, it provides a lightweight way to launch ephemeral containers of any Docker image.
+
+### Differences between Distrobox and Boxer
+
+**Boxer can...**
+
+- Create and dismantle ephemeral containers of any Docker image
+- Access files and folders from the directory where the container was launched
+
+**Boxer cannot...**
+
+- Leave containers running in the background
+- Persist changes made to its containers (planned)
+- Use Wayland or X11 sockets
+- Use networking features (planned)
+- Mount removable devices
+- Tell you a love story
 
 ## Key Features
 
@@ -16,7 +38,7 @@ Instantly launch any operating system or Docker image from your terminal. No ins
 
 ## Setup
 
-Add the following code to your `.bashrc` or `.zshrc` file, then restart your terminal:
+Add this code to your `.bashrc` or `.zshrc` file, then restart your terminal:
 
 ```bash
 boxer() {
@@ -34,12 +56,19 @@ boxer() {
 
 ## Usage and Examples
 
+Launch a container with the `boxer` command like this:
+
 ```
 boxer <image_name>[:image_tag] [command]
 ```
 
+Then, find the files from the directory in which you launched the container in
+the bind mount location: `/host`.
+
 ### Examples
 
-- Whip up an Ubuntu container: `boxer ubuntu`
-- Drop into a shell within the node image: `boxer node bash`
-- Target a specific image tag: `boxer rockylinux:9`
+| Example | Command |
+| ------- | ------- |
+| Whip up an Ubuntu container | `boxer ubuntu` |
+| Drop into a shell within the node image | `boxer node bash` |
+| Target a specific image tag | `boxer rockylinux:9` |
