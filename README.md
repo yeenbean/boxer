@@ -54,6 +54,9 @@ boxer() {
 }
 ```
 
+Alternatively, add [this](https://github.com/yeenbean/boxer/blob/main/boxer.sh)
+instead for the bleeding edge version.
+
 ## Usage and Examples
 
 Launch a container with the `boxer` command like this:
