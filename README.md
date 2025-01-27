@@ -1,3 +1,8 @@
+> # 🚨 DO NOT USE BOXER AT THIS TIME.
+> If you use Docker Engine instead of Docker Desktop, Boxer **will** mess up your filesystem permissions! Unless you run macOS, **please refrain from using Boxer at this time.**
+> 
+> Boxer needs a complete rewrite to mitigate gotchas with Docker Engine. At this time, I'm not sure what that would look like. Personally, I use this tool daily, so the rewrite will happen. I just unfortunately cannot gauge the timeframe for that.
+
 # 🥊 Boxer
 
 Instantly launch an ephemeral Docker container from your terminal with just one function in your `.bashrc` or `.zshrc` file.
