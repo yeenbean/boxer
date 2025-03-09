@@ -1,7 +1,10 @@
-> # 🚨 DO NOT USE BOXER AT THIS TIME.
-> If you use Docker Engine instead of Docker Desktop, Boxer **will** mess up your filesystem permissions! Unless you run macOS or Windows on your host, **please refrain from using Boxer at this time.**
-> 
-> Boxer needs a complete rewrite to mitigate gotchas with Docker Engine. At this time, I'm not sure what that would look like. Personally, I use this tool daily, so the rewrite will happen. I just unfortunately cannot gauge the timeframe for that.
+> # ⚠️ This repository has moved.
+> Boxer has [moved to Codeberg](https://codeberg.org/zima/boxer). This repository will no longer be updated.
+
+> ## 🚨 DO NOT USE THIS VERSION OF BOXER.
+> This version is old, buggy, and does not include the necessary support for Docker Engine. **Do not use it.** Why don't you check out the updated version on my [Codeberg](https://codeberg.org/zima/boxer) instead?
+
+---
 
 # 🥊 Boxer
 
